@@ -18,7 +18,9 @@ App {
 }
 .article-list {
   margin: 2%;
-  
+}
+.empty-article-list {
+  text-align: center;
 }
 .card {
   width:20%;
@@ -70,3 +72,12 @@ App {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="card"] {
+    width: 100%;
+  }
+  [class*="article-list"] {
+    padding-right: 5%;
+  }
+}

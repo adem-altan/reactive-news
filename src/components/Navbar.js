@@ -2,21 +2,16 @@ import React, { Component } from "react";
 import axios from 'axios';
 import Button from '@material-ui/core/Button';
 import shortid from 'shortid';
-import articleReducer from "../store/articleReducer";
-import {createStore} from 'redux';
 import {connect} from 'react-redux';
 import Select from './DialogSelect';
 import Icon from '@material-ui/core/Icon';
 
-
-const store = createStore(articleReducer);
 const environment = {
     APIKEY: '810f45c7213f4a46bc5ab820d0b0ab7a',
     APIEndPoint: 'https://newsapi.org/v2/'
   };
 class Navbar extends Component {
   makeQuery = (countryCode,category) => {
-    console.log(countryCode,category);
     axios.get(environment.APIEndPoint+'top-headlines?country='+countryCode+'&category='+category+'&apiKey='+environment.APIKEY)
         .then(response => {
             const articles = response.data.articles;

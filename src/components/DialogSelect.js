@@ -77,6 +77,7 @@ class DialogSelect extends React.Component {
                   <option value="us">United States</option>
                   <option value="tr">Turkey</option>
                   <option value="ru">Russia</option>
+                  <option value="it">Italy</option>
                 </Select>
               </FormControl>
             </form>
