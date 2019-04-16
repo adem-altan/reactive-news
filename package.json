@@ -9,6 +9,7 @@
     "@types/react": "^16.8.12",
     "@types/react-dom": "^16.8.3",
     "axios": "^0.18.0",
+    "firebase": "^5.9.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-native": "^0.59.3",
@@ -35,5 +36,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adem-altan/reactive-news.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adem-altan/reactive-news/issues"
+  },
+  "homepage": "https://github.com/adem-altan/reactive-news#readme"
 }
